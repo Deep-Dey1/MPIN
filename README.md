@@ -130,4 +130,17 @@ if weak_reasons:
 else:
     strength = "STRONG"
 `````
+### ✅ Output
+- **Strength: WEAK or STRONG**
 
+- **Reasons (if WEAK):** An array containing any of the following:
+
+- **COMMONLY_USED**
+
+- **DEMOGRAPHIC_DOB_SELF**
+
+- **DEMOGRAPHIC_DOB_SPOUSE**
+
+- **DEMOGRAPHIC_ANNIVERSARY**
+
+**If no weaknesses are found, the array will be empty, and the strength will be marked as STRONG.**
