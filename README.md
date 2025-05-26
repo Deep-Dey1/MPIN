@@ -9,7 +9,7 @@ This repository contains a basic project to find Weak MPINs by predicting the MP
 
 You can download and use the **MPIN Evaluator and Suggestion Application** for Windows from the link below:
 
-[Download MPIN Evaluator and Suggestion Application (.exe)]([https://github.com/your-username/your-repo-name/releases/download/v1.0/ui.exe](https://github.com/Deep-Dey1/MPIN/blob/main/Main-project/MPIN-GUI/dist/ui2.exe))
+[Download MPIN Evaluator and Suggestion Application (.exe)]([https://github.com/your-username/your-repo-name/releases/download/v1.0/ui.exe](https://github.com/Deep-Dey1/MPIN/releases/download/v1.0/MPIN-EVALUATOR-AND-SUGGESTOR.exe))
 
 ---
 
