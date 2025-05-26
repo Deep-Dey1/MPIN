@@ -1,7 +1,7 @@
 # MPIN
 This repository contains a basic project to find Weak MPINs by predicting the MPIN as guessable or commonly used one. To fix the Weak MPINS this project suggest the users more secure and unique MPINs for their use using GUI and web application.
 
-# 🔐 MPIN Security Assessment – OneBanc Assignment
+# 🔐 MPIN Security Assessment
 
 ## 📘 Introduction: What is MPIN?
 
@@ -59,4 +59,26 @@ Checks the entered MPIN against a list of known common MPINs.
 ```python
 if mpin in commonly_used_pin_list:
     mark_as_weak("COMMONLY_USED")
+## 🧩 Part B: Demographic-Based Check
 
+This part checks if the MPIN is derived from any known demographic information that users often use out of convenience. These combinations are predictable and weaken the MPIN's security.
+
+### 🧠 Inputs
+
+- **User DOB**
+- **Spouse DOB**
+- **Wedding Anniversary**
+
+### 🔍 Logic
+
+For each of the above dates, we generate multiple combinations using formats like `DDMM`, `MMDD`, `YYMMDD`, `YYYYMM`, etc., and check whether the given MPIN matches any of these combinations.
+
+```python
+if mpin in get_date_variants(user_dob):
+    mark_as_weak("DEMOGRAPHIC_DOB_SELF")
+
+if mpin in get_date_variants(spouse_dob):
+    mark_as_weak("DEMOGRAPHIC_DOB_SPOUSE")
+
+if mpin in get_date_variants(anniversary):
+    mark_as_weak("DEMOGRAPHIC_ANNIVERSARY")
