@@ -61,17 +61,17 @@ if mpin in commonly_used_pin_list:
     mark_as_weak("COMMONLY_USED")
 `````
 
-## 🧩 Part B: Demographic-Based Check
+### 🧩 Part B: Demographic-Based Check
 
 This part checks if the MPIN is derived from any known demographic information that users often use out of convenience. These combinations are predictable and weaken the MPIN's security.
 
-### 🧠 Inputs
+#### 🧠 Inputs
 
 - **User DOB**
 - **Spouse DOB**
 - **Wedding Anniversary**
 
-### 🔍 Logic
+#### 🔍 Logic
 
 For each of the above dates, we generate multiple combinations using formats like `DDMM`, `MMDD`, `YYMMDD`, `YYYYMM`, etc., and check whether the given MPIN matches any of these combinations.
 
@@ -85,20 +85,20 @@ if mpin in get_date_variants(spouse_dob):
 if mpin in get_date_variants(anniversary):
     mark_as_weak("DEMOGRAPHIC_ANNIVERSARY")
 `````
-### ✅ Output
+#### ✅ Output
 - **Strength: WEAK or STRONG**
-## 🧩 Part C: Full Weakness Reasoning System
+### 🧩 Part C: Full Weakness Reasoning System
 
 This part builds upon Part A and Part B by not only determining the **strength** of the MPIN but also clearly **explaining the reasons** behind a weak classification.
 
-### 🧠 Inputs
+#### 🧠 Inputs
 
 - **MPIN** (4-digit)
 - **User DOB**
 - **Spouse DOB**
 - **Wedding Anniversary**
 
-### 🔍 Logic
+#### 🔍 Logic
 
 We check the MPIN for two types of weaknesses:
 
@@ -130,7 +130,7 @@ if weak_reasons:
 else:
     strength = "STRONG"
 `````
-### ✅ Output
+#### ✅ Output
 - **Strength: WEAK or STRONG**
 
 - **Reasons (if WEAK):** An array containing any of the following:
