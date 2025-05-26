@@ -58,7 +58,8 @@ Checks the entered MPIN against a list of known common MPINs.
 #### 🔍 Logic
 ```python
 if mpin in commonly_used_pin_list:
-    mark_as_weak("COMMONLY_USED")`````
+    mark_as_weak("COMMONLY_USED")
+`````
 
 ## 🧩 Part B: Demographic-Based Check
 
