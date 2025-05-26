@@ -1,8 +1,11 @@
 # MPIN
 This repository contains a basic project to find Weak MPINs by predicting the MPIN as guessable or commonly used one. To fix the Weak MPINS this project suggest the users more secure and unique MPINs for their use using GUI and web application. [link](https://github.com/Deep-Dey1/MPIN/tree/main)
 
-![MPIN-TESTER](https://github.com/Deep-Dey1/MPIN/blob/main/Main-project/MPIN-GUI-DEMO/MPIN-TESTER.png)
-![MPIN-SUGGESTOR](https://github.com/Deep-Dey1/MPIN/blob/main/Main-project/MPIN-GUI-DEMO/MPIN-SUGGESTOR.png)
+<p align="center">
+  <img src="https://github.com/Deep-Dey1/MPIN/blob/main/Main-project/MPIN-GUI-DEMO/MPIN-TESTER.png?raw=true" alt="MPIN-TESTER" width="45%" />
+  &nbsp;
+  <img src="https://github.com/Deep-Dey1/MPIN/blob/main/Main-project/MPIN-GUI-DEMO/MPIN-SUGGESTOR.png?raw=true" alt="MPIN-SUGGESTOR" width="45%" />
+</p>
 
 [DEMO](https://github.com/Deep-Dey1/MPIN/releases/tag/v1.0)
 
