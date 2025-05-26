@@ -84,3 +84,6 @@ if mpin in get_date_variants(spouse_dob):
 
 if mpin in get_date_variants(anniversary):
     mark_as_weak("DEMOGRAPHIC_ANNIVERSARY")
+`````
+### ✅ Output
+- **Strength: WEAK or STRONG**
