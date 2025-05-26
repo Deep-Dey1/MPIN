@@ -87,3 +87,47 @@ if mpin in get_date_variants(anniversary):
 `````
 ### ✅ Output
 - **Strength: WEAK or STRONG**
+## 🧩 Part C: Full Weakness Reasoning System
+
+This part builds upon Part A and Part B by not only determining the **strength** of the MPIN but also clearly **explaining the reasons** behind a weak classification.
+
+### 🧠 Inputs
+
+- **MPIN** (4-digit)
+- **User DOB**
+- **Spouse DOB**
+- **Wedding Anniversary**
+
+### 🔍 Logic
+
+We check the MPIN for two types of weaknesses:
+
+1. **Commonly Used MPINs**  
+   Compared against a predefined list of the most frequently used PINs (e.g., `1234`, `0000`, `1111`, etc.)
+
+2. **Demographic Matches**  
+   Using the `get_date_variants()` function to generate all meaningful combinations from each date input and checking if the MPIN matches any of those.
+
+Each reason is appended to a list of weakness reasons:
+
+```python
+weak_reasons = []
+
+if mpin in commonly_used_mpin_list:
+    weak_reasons.append("COMMONLY_USED")
+
+if mpin in get_date_variants(user_dob):
+    weak_reasons.append("DEMOGRAPHIC_DOB_SELF")
+
+if mpin in get_date_variants(spouse_dob):
+    weak_reasons.append("DEMOGRAPHIC_DOB_SPOUSE")
+
+if mpin in get_date_variants(anniversary):
+    weak_reasons.append("DEMOGRAPHIC_ANNIVERSARY")
+
+if weak_reasons:
+    strength = "WEAK"
+else:
+    strength = "STRONG"
+`````
+
