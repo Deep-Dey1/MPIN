@@ -3,6 +3,16 @@ This repository contains a basic project to find Weak MPINs by predicting the MP
 
 # 🔐 MPIN Security Assessment
 
+---
+
+## 📥 Download
+
+You can download and use the **MPIN Evaluator and Suggestion Application** for Windows from the link below:
+
+[Download MPIN Evaluator and Suggestion Application (.exe)]([https://github.com/your-username/your-repo-name/releases/download/v1.0/ui.exe](https://github.com/Deep-Dey1/MPIN/blob/main/Main-project/MPIN-GUI/dist/ui2.exe))
+
+---
+
 ## 📘 Introduction: What is MPIN?
 
 **MPIN (Mobile Personal Identification Number)** is a numeric password used for authentication in mobile banking applications. It generally consists of 4 or 6 digits and serves as a second factor for verifying user identity.
