@@ -276,3 +276,26 @@ To make the GUI accessible on machines without Python installed, a **standalone 
 ```bash
 pyinstaller --onefile --windowed gui_app.py
 `````
+---
+
+## ✅ Summary
+
+This project provides a complete solution to assess the security of MPINs (Mobile Personal Identification Numbers) used in mobile banking apps. 
+
+It covers:
+
+- Detection of **commonly used** weak MPINs.
+- Identification of **user-specific demographic vulnerabilities**, including:
+  - Date of Birth (Self and Spouse)
+  - Wedding Anniversary
+- Detailed reasoning for weak classification.
+- Support for both **4-digit and 6-digit** MPINs.
+- A **Tkinter-based GUI application** for user-friendly interaction.
+- A compiled **.exe file** for easy distribution without Python setup.
+- A **secure MPIN suggestion engine** to guide users toward stronger options.
+- A **robust test suite** covering diverse input cases and edge scenarios.
+
+By simulating real-world vulnerabilities and improving MPIN practices, this project helps demonstrate how user behavior and data exposure can compromise mobile banking security — and how it can be mitigated with intelligent checks.
+
+---
+
