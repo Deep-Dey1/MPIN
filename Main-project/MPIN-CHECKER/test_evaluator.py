@@ -128,7 +128,7 @@ def run_tests():
 
     for i, case in enumerate(test_cases, 1):
         result = evaluate_pin(case["pin"], case["demographics"])
-        status = "✅ PASS" if result["strength"] == case["expected_strength"] and set(result["reasons"]) == set(case["expected_reasons"]) else "❌ FAIL"
+        status = "PASS" if result["strength"] == case["expected_strength"] and set(result["reasons"]) == set(case["expected_reasons"]) else "FAIL"
         
         print(f"Test Case {i}: {status}")
         print(f"Input PIN: {case['pin']}")
@@ -137,10 +137,10 @@ def run_tests():
         print(f"Got: {result['strength']} - {result['reasons']}")
         print("-" * 40)
 
-        if status.startswith("✅"):
+        if status.startswith("**"):
             passed += 1
 
-    print(f"\n✅ Total Passed: {passed}/{len(test_cases)}")
+    print(f"\nTotal Passed: {passed}/{len(test_cases)}")
 
 if __name__ == "__main__":
     run_tests()

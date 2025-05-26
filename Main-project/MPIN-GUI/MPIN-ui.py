@@ -261,8 +261,8 @@ class MPINApp:
             # Show important alert about demographic combinations
             messagebox.showinfo(
                 "Important Notice",
-                "📌 NOTE: Your MPIN will be evaluated for potential weakness based on demographic date combinations.\n\n"
-                "⚠️ Avoid using combinations derived from your DOB, spouse's DOB, or anniversary.\n\n"
+                "NOTE: Your MPIN will be evaluated for potential weakness based on demographic date combinations.\n\n"
+                "Avoid using combinations derived from your DOB, spouse's DOB, or anniversary.\n\n"
                 "We check for these patterns:\n"
                 "- 4-digit patterns: DDMM, MMDD, YYMM, MMYY, YYDD, DDYY, YYYY (full year)\n"
                 "- 6-digit patterns: DDMMYY, MMDDYY, YYMMDD, YYDDMM, YYYYMM, YYYYDD, MMYYYY, DDYYYY\n"

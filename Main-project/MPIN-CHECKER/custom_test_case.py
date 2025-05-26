@@ -16,12 +16,12 @@ def get_valid_input(prompt, length=None, is_date=False):
             if is_valid_date(value):
                 return value
             else:
-                print("❌ Please enter a valid date in YYYY-MM-DD format.")
+                print("Please enter a valid date in YYYY-MM-DD format.")
         elif length:
             if is_valid_mpin(value, length):
                 return value
             else:
-                print(f"❌ MPIN must be exactly {length} digits.")
+                print(f"MPIN must be exactly {length} digits.")
         else:
             return value
 
@@ -30,10 +30,10 @@ def part_a(pin):
     result = evaluate_pin(pin)
     if "COMMONLY_USED" in result["reasons"]:
         print(f"Entered MPIN: {pin}")
-        print("Output: MPIN is COMMONLY USED ❌")
+        print("Output: MPIN is COMMONLY USED")
     else:
         print(f"Entered MPIN: {pin}")
-        print("Output: MPIN is NOT commonly used ✅")
+        print("Output: MPIN is NOT commonly used ")
 
 def part_b(pin, demographics):
     print("\n=== Part B: Evaluate MPIN Strength based on demographics ===")
@@ -49,7 +49,7 @@ def part_c(pin, demographics):
     if result["strength"] == "WEAK":
         print("Reasons:", result["reasons"])
     else:
-        print("Reasons: None ✅")
+        print("Reasons: None ")
 
 def part_d(pin_6_digit, demographics):
     print("\n=== Part D: Same as C but with a 6-digit MPIN ===")
@@ -59,13 +59,13 @@ def part_d(pin_6_digit, demographics):
     if result["strength"] == "WEAK":
         print("Reasons:", result["reasons"])
     else:
-        print("Reasons: None ✅")
+        print("Reasons: None ")
 
 def main():
-    print("🔐 MPIN Evaluation (All Parts A to D)\n")
+    print("MPIN Evaluation (All Parts A to D)\n")
 
-    print("📌 NOTE: Your MPIN will be evaluated for potential weakness based on demographic date combinations.")
-    print("⚠️ Avoid using combinations derived from your DOB, spouse's DOB, or anniversary.")
+    print("NOTE: Your MPIN will be evaluated for potential weakness based on demographic date combinations.")
+    print("Avoid using combinations derived from your DOB, spouse's DOB, or anniversary.")
     print("We check for these patterns:")
     print("- 4-digit patterns: DDMM, MMDD, YYMM, MMYY, YYDD, DDYY, YYYY (full year)")
     print("- 6-digit patterns: DDMMYY, MMDDYY, YYMMDD, YYDDMM, YYYYMM, YYYYDD, MMYYYY, DDYYYY")

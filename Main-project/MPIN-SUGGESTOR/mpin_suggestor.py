@@ -44,10 +44,10 @@ def get_valid_date(prompt):
         date_str = input(prompt).strip()
         if len(date_str) == 10 and all(part.isdigit() for part in date_str.split("-")):
             return date_str
-        print("❌ Please enter a valid date in YYYY-MM-DD format.")
+        print("Please enter a valid date in YYYY-MM-DD format.")
 
 def main():
-    print("🔐 Secure MPIN Suggestor")
+    print("Secure MPIN Suggestor")
 
     # Collect user demographics
     dob = get_valid_date("Enter your Date of Birth (YYYY-MM-DD): ")
@@ -62,14 +62,14 @@ def main():
     while True:
         mpin = suggest_secure_mpin(demographics)
         if mpin:
-            print(f"\n✅ Suggested Secure MPIN: {mpin}")
+            print(f"\n Suggested Secure MPIN: {mpin}")
             choice = input("Do you want to accept this MPIN? (yes/no): ").strip().lower()
             if choice == 'yes':
                 save_mpin(mpin)
-                print("✅ MPIN registered successfully and won't be reused.")
+                print("MPIN registered successfully and won't be reused.")
                 break
         else:
-            print("❌ Couldn't find a secure MPIN. Please try again later.")
+            print("Couldn't find a secure MPIN. Please try again later.")
             break
 
 if __name__ == "__main__":
