@@ -137,7 +137,7 @@ def run_tests():
         print(f"Got: {result['strength']} - {result['reasons']}")
         print("-" * 40)
 
-        if status.startswith("**"):
+        if status.startswith("P"):
             passed += 1
 
     print(f"\nTotal Passed: {passed}/{len(test_cases)}")
